@@ -42,4 +42,4 @@ if st.button('Submit Order'):
         st.warning("Please select atleast one Ingredient")
 
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response.json()
+st.text(smoothiefroot_response.json())
