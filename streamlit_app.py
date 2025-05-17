@@ -35,7 +35,7 @@ if st.button('Submit Order'):
         #st.write(my_insert_stmt)
         
         session.sql(my_insert_stmt).collect()
-        st.success('Your Smoothie is ordered!', icon="✅")
+        st.success('Your Smoothie is ordered,  {name_on_order.strip()}!', icon="✅")
 
     else:
         st.warning("Please select atleast one Ingredient")
